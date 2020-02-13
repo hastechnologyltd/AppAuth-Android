@@ -79,7 +79,7 @@ public final class BrowserSelector {
         List<BrowserDescriptor> browsers = new ArrayList<>();
         String defaultBrowserPackage = null;
 
-        int queryFlag = PackageManager.GET_RESOLVED_FILTER;
+        int queryFlag = 0;
         if (VERSION.SDK_INT >= VERSION_CODES.M) {
             queryFlag |= PackageManager.MATCH_ALL;
         }
